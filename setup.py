@@ -5,14 +5,19 @@ import ciscodnacapphosting
 with open("requirements.txt") as f:
     requirements = f.read().splitlines()
 
-
 # pwd = path.abspath(path.dirname(__file__))
 with open(
     path.join(path.abspath(path.dirname(__file__)), "README.md"), encoding="utf-8"
 ) as f:
     long_description = f.read()
 
-setup(
+setup(project_urls={
+    'Homepage': 'https://github.com/lineaje-labs-gos/robertcsapo-cisco-dnac-app-hosting-import-docker-images',
+    'Repository': 'https://github.com/lineaje-labs-gos/robertcsapo-cisco-dnac-app-hosting-import-docker-images',
+    'Tracker': 'https://github.com/lineaje-labs-gos/robertcsapo-cisco-dnac-app-hosting-import-docker-images/issues',
+  }, 
+  maintainer_email="221268890+Lineaje-DepFixer@users.noreply.github.com", 
+  maintainer="Lineaje DepFixer", 
     name="ciscodnacapphosting",
     author=ciscodnacapphosting.author,
     author_email=ciscodnacapphosting.email,
